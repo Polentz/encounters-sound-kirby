@@ -1,0 +1,57 @@
+title: Audio
+
+sections:
+  copy:
+    type: fields
+    fields:
+      recording:
+        type: select
+        label: Recording Tag
+        options:
+          Interview
+          Workshop
+          Mask
+          Ekphrasis
+        width: 1/3
+      stories:
+        label: Stories Tag
+        type: select
+        options:
+          Places
+          History
+          Tourism and Culture
+          Migration Politics
+          Ship Landings
+          Migrant Centers
+          Archive of Migration
+        width: 1/3
+      objects:
+        label: Object Tag
+        type: select
+        options:
+          Carta nautica
+          Lijejacket
+          Perfume
+          Sim card
+          Shoe insole
+        width: 1/3
+      information: 
+        type: textarea
+        width: 1/3
+      text: 
+        type: textarea
+        width: 1/3
+      ascolto:
+        label: URL
+        type: text
+        width: 1/3
+  # audio:
+  #   type: fields
+  #   fields: 
+  #     ascolto:
+  #       type: text
+  #       width: 2/3
+  audio:
+    type: files
+    required: true
+    width: 1/3

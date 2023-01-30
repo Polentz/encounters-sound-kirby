@@ -1,0 +1,6 @@
+title: Category
+
+sections:
+  audio:
+    type: pages
+    layout: list

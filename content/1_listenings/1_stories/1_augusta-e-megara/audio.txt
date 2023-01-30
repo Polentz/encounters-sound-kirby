@@ -1,0 +1,40 @@
+Title: Augusta e Megara
+
+----
+
+Recording: Interview
+
+----
+
+Stories: History
+
+----
+
+Objects: 
+
+----
+
+Information:
+
+This is an example
+October 28, 2022
+Berlin
+
+----
+
+Text:
+
+This is a much longer text:
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem laboriosam eveniet, praesentium aliquid assumenda consequuntur quibusdam tenetur, excepturi sunt minima dolor consequatur deleniti dolorem. Nam alias libero velit odio tempora quisquam.
+
+----
+
+Ascolto: https://docs.google.com/uc?export=open&id=1Ap1rrMLyjJz5ywRuo1Rx7MD5T-piSgsA
+
+----
+
+Uuid: lBB9rN30xptg8t5H
+
+----
+
+Url: http://localhost:8080/media/pages/listenings/stories/augusta-e-megara/be296ae64e-1666961977/01_parini_augusta_megara.mp3

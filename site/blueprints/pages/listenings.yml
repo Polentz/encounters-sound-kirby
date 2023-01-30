@@ -1,0 +1,6 @@
+title: Listenings
+
+sections:
+  categories:
+    type: pages
+    layout: list
