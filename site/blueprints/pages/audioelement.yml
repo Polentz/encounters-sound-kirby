@@ -1,0 +1,66 @@
+title: Audio Element
+
+tabs:
+  audioelement:
+    label: Audio Element
+    icon: audio  
+    columns: 
+      - width: 1/2
+        sections:
+          filters:
+            type: fields
+            fields:
+              recording:
+                label: Recording Tag            
+                type: select             
+                options:
+                  Interview
+                  Workshop
+                  Mask
+                  Ekphrasis
+              stories:
+                label: Stories Tag
+                type: select
+                options:
+                  Places
+                  History
+                  Tourism and Culture
+                  Migration Politics
+                  Ship Landings
+                  Migrant Centers
+                  Archive of Migration
+              objects:
+                label: Objects Tag
+                type: select
+                options:
+                  Carta nautica
+                  Lijejacket
+                  Perfume
+                  Sim card
+                  Shoe insole
+      - width: 1/2
+        sections:      
+          audio:
+            label: Upload audio file
+            type: files
+            width: 1/3
+            template: 
+            - audio
+            min: 1
+            max: 1
+            size: small
+
+  indexcard:
+    label: Index card
+    icon: grid-full   
+    columns: 
+      - width: 1/2
+        sections:
+          indexcard:
+            type: fields
+            fields:
+              information: 
+                type: textarea
+              text: 
+                type: textarea
+  

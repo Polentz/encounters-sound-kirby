@@ -1,28 +1,5 @@
 <?= snippet('header') ?>
 
-<?php 
-
-$stories = $page->children()->listed()->first();
-$objects = $page->children()->listed()->last();
-
-$filterBy = get('filter');
-
-$storiesUnfiltered = $stories->children()->listed();
-$storiesAudio = $storiesUnfiltered
-    ->when($filterBy, function($filterBy) {
-       return $this->filterBy('Stories', $filterBy);
-    });
-$storiesFilters = $storiesUnfiltered->pluck('Stories', null, true);
-
-$objectsUnfiltered = $objects->children()->listed();
-$objectsAudio = $objectsUnfiltered
-    ->when($filterBy, function($filterBy) {
-        return $this->filterBy('Objects', $filterBy);
-     });
-$objectsFilters = $objectsUnfiltered->pluck('Objects', null, true);
-
-?>
-
 <header class="header">
         <h1 class="site-title"><a href="<?= $site->url() ?>"><?= $site->title() ?></a></h1>
 </header>
@@ -30,13 +7,13 @@ $objectsFilters = $objectsUnfiltered->pluck('Objects', null, true);
 <main class="audio">
     <section class="audio-wrapper">
         <div class="audio-column">
-            <?php foreach ($storiesAudio as $audio): ?>
-                <?php snippet('audio', ['audio' => $audio]); ?>
+            <?php foreach ($storiesAudio as $audioelement): ?>
+                <?php snippet('audioelement', ['audioelement' => $audioelement]); ?>
             <?php endforeach ?>
         </div>
         <div class="audio-column">
-            <?php foreach ($objectsAudio as $audio): ?>
-                <?php snippet('audio', ['audio' => $audio]); ?>
+            <?php foreach ($objectsAudio as $audioelement): ?>
+                <?php snippet('audioelement', ['audioelement' => $audioelement]); ?>
             <?php endforeach ?>
         </div>
     </section>

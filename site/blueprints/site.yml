@@ -1,5 +1,30 @@
 title: Site
 
-sections:
-  pages:
-    type: pages
+tabs:
+  websitepages:
+    label: Website Pages
+    sections:
+      pages:
+        type: pages
+        label: "{{ page.title }}"
+        image: false
+        status: all
+        template:
+          - home
+          - listenings
+  seo:
+    label: Website SEO
+    sections:
+      meta:
+        type: fields
+        fields: 
+          description:
+            label: Website description
+            type: textarea
+            width: 1/2
+            buttons: false
+          keywords:
+            label: Website keywords
+            type: tags
+            separator: ','
+            width: 1/2

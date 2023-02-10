@@ -29,12 +29,4 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem laborio
 
 ----
 
-Ascolto: https://docs.google.com/uc?export=open&id=1Ap1rrMLyjJz5ywRuo1Rx7MD5T-piSgsA
-
-----
-
-Uuid: lBB9rN30xptg8t5H
-
-----
-
-Url: http://localhost:8080/media/pages/listenings/stories/augusta-e-megara/be296ae64e-1666961977/01_parini_augusta_megara.mp3
+Uuid: zMvrjX48LfJhVxNo

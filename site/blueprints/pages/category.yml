@@ -3,4 +3,8 @@ title: Category
 sections:
   audio:
     type: pages
-    layout: list
+    label: List of audios
+    image: false
+    status: all
+    template:
+      - audioelement

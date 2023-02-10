@@ -1,0 +1,58 @@
+title: Info
+
+columns:
+  title:
+    width: 1/1    
+    sections:
+      header:
+        type: fields
+        fields:
+          infotitle:
+            label: Title
+            type: text
+      question:
+        type: fields
+        fields:
+          hasimage:
+            type: toggle
+            label: Need an image?
+            text:
+              - "no"
+              - "yes"
+  left:
+    width: 1/2
+    sections:
+      leftcolumn:
+        type: fields
+        fields:
+          columnone:
+            label: Text
+            type: textarea
+  right:
+    width: 1/2
+    sections:
+      rightcolumn:
+        type: fields
+        fields:
+          columntwo:
+            label: false
+            type: textarea
+            when:
+              hasimage: false
+      image:
+        type: files
+        max: 1
+        min: 1
+        multiple: false
+        template: image    
+        when:
+          hasimage: true    
+  footer:
+    width: 1/1
+    sections:
+      credits:
+        type: fields
+        fields:
+          credits:
+            label: Credits
+            type: textarea

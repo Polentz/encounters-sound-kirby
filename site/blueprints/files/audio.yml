@@ -1,3 +1,5 @@
-title: File
+title: Audio file
 
-accept: audio/mp3
+accept: 
+  extension: mp3, mpeg
+  type: audio

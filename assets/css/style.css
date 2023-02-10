@@ -335,12 +335,12 @@ main {
     font-size: var(--medium-txt);
     text-align: center;
     padding: var(--small-margin);
+    border-bottom: var(--border);
 }
 
 .info-block {
     display: flex;
     justify-content: space-between;
-    border-top: var(--border);
     padding-top: var(--small-margin);
 }
 

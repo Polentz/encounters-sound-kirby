@@ -1,0 +1,16 @@
+title: Homepage
+
+sections:
+  pagesections:
+    label: Page sections
+    type: pages
+    status: all
+    image: false
+    info: "{{ page.intendedTemplate }}"
+    templates:
+      - info
+
+
+
+
+

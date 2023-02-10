@@ -3,4 +3,7 @@ title: Listenings
 sections:
   categories:
     type: pages
-    layout: list
+    label: Listenings categories
+    image: false
+    status: published
+    sortable: false
