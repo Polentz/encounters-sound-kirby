@@ -19,38 +19,33 @@ if (anchorTags) {
 const mainWrapper = document.querySelector(".main-wrapper");
 const mainLink = document.querySelector(".main-link");
 const mediaQuery = window.matchMedia("(max-width: 600px)");
+const mainLinkHtml = mainLink.innerHTML;
 
 if (mainWrapper, mainLink) {
-    mainWrapper.addEventListener("mouseenter", () => {
-        mainWrapper.classList.add("skew");
-    })
-    mainWrapper.addEventListener("mouseleave", () => {
-        mainWrapper.classList.remove("skew");
-    });
-
-    mainLink.addEventListener("mouseenter", () => {
-        if (mainLink.innerHTML = "Enter") {
+    if (mainLinkHtml == "Enter") {
+        mainLink.addEventListener("mouseenter", () => {
             mainLink.innerHTML = "Listen";
-        } else if (mainLink.innerHTML = "Entra") {
+        });
+        mainLink.addEventListener("mouseleave", () => {
+            mainLink.innerHTML = "Enter";
+        });
+    } else if (mainLinkHtml == "Entra") {
+        mainLink.addEventListener("mouseenter", () => {
             mainLink.innerHTML = "Ascolta";
-        }
-    });
-    mainLink.addEventListener("mouseleave", () => {
-        if (mainLink.innerHTML = "Listen") {
-            mainLink.innerHTML = "Enter";
-        } else if (mainLink.innerHTML = "Ascolta") {
+        });
+        mainLink.addEventListener("mouseleave", () => {
             mainLink.innerHTML = "Entra";
-        }
-    });
+        });
+    }
 
-    const handleMediaQuery = (e) => {
-        if (e.matches) {
-            mainLink.innerHTML = "Listen";
-        } else {
-            mainLink.innerHTML = "Enter";
-        }
-    };
+    // const handleMediaQuery = (e) => {
+    //     if (e.matches) {
+    //         mainLink.innerHTML = "Listen";
+    //     } else {
+    //         mainLink.innerHTML = "Enter";
+    //     }
+    // };
 
-    mediaQuery.addListener(handleMediaQuery);
-    handleMediaQuery(mediaQuery);
+    // mediaQuery.addListener(handleMediaQuery);
+    // handleMediaQuery(mediaQuery);
 }

@@ -42,7 +42,7 @@
     --small-margin: .8rem;
     --button-padding: .25rem 1.5rem .5rem 1.5rem;
     /* --bg-color: #7fa3be; */
-    --bg-color: #fff;
+    --bg-color: #ffffff;
     --txt-color: #041185;
     /* --green: #1e31e5;  #85BCFF*/
     --green: #82B4FF;
@@ -95,7 +95,7 @@ em {
 
 a {
     font-family: "ABCDiatype Mono";
-    display: block;
+    /* display: block; */
     cursor: pointer;
     position: relative;
     transition: transform 1s ease-out;
@@ -280,10 +280,10 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     z-index: 4;
 }
 
@@ -293,8 +293,22 @@ main {
     font-size: var(--large-txt);
     line-height: 1.1;
     text-transform: uppercase;
-    margin-right: 4rem;
-    margin-left: 5.5rem;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+}
+
+.main-title:first-of-type {
+    left: 0;
+    text-align: end;
+    padding-right: 8vw;
+}
+
+.main-title:last-of-type {
+    right: 0;
+    padding-left: 8vw;
 }
 
 .footer-link,
@@ -309,6 +323,7 @@ main {
 
 .main-link {
     position: absolute;
+    z-index: 2;
 }
 
 /* .main-svg {
@@ -836,7 +851,10 @@ input.seek-slider::-webkit-slider-thumb {
     }
 
     .main-title {
-        margin: 0;
+        position: static;
+        width: auto;
+        padding: 0 !important;
+        transform: none;
     }
 
     .main-link {
@@ -852,7 +870,7 @@ input.seek-slider::-webkit-slider-thumb {
     :root {
         --header-height: 3rem;
         --footer-height: 3rem;
-        --main-height: 50vh;
+        --main-height: 75vh;
         --general-margin: 1rem;
         --header-title: .7rem;
         --medium-txt: 1.5rem;
@@ -915,6 +933,10 @@ input.seek-slider::-webkit-slider-thumb {
 
     .info-wrapper:last-of-type {
         margin-bottom: var(--footer-height);
+    }
+
+    .info-wrapper:not(:first-of-type)::after {
+        background-image: none
     }
 
     .info-block {

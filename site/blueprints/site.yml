@@ -12,6 +12,7 @@ tabs:
         template:
           - home
           - listenings
+          - page
   seo:
     label: Website SEO
     sections:

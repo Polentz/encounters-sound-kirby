@@ -2,4 +2,8 @@ Title: Stories
 
 ----
 
+Slug: stories
+
+----
+
 Uuid: 1bUx3761ZdL8rxKs

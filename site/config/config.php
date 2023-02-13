@@ -1,11 +1,8 @@
 <?php
 
 return [
-    'debug'  => true
-];
-
-return [
-    'markdown' => [
-      'breaks' => true
-    ]
+  'languages' => true,
+  'smartypants' => true,
+  'debug'  => true,
+  // 'home' => 'coming-soon'
 ];
