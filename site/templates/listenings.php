@@ -1,5 +1,5 @@
 <?= snippet('header') ?>
-
+<body>
 <header class="header">
         <h1 class="site-title"><a href="<?= $site->url() ?>"><?= $site->title() ?></a></h1>
 </header>

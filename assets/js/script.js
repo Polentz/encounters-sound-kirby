@@ -29,10 +29,18 @@ if (mainWrapper, mainLink) {
     });
 
     mainLink.addEventListener("mouseenter", () => {
-        mainLink.innerHTML = "Listen";
+        if (mainLink.innerHTML = "Enter") {
+            mainLink.innerHTML = "Listen";
+        } else if (mainLink.innerHTML = "Entra") {
+            mainLink.innerHTML = "Ascolta";
+        }
     });
     mainLink.addEventListener("mouseleave", () => {
-        mainLink.innerHTML = "Enter";
+        if (mainLink.innerHTML = "Listen") {
+            mainLink.innerHTML = "Enter";
+        } else if (mainLink.innerHTML = "Ascolta") {
+            mainLink.innerHTML = "Entra";
+        }
     });
 
     const handleMediaQuery = (e) => {
@@ -43,6 +51,6 @@ if (mainWrapper, mainLink) {
         }
     };
 
-    mediaQ.addListener(handleMediaQuery);
-    handleMediaQuery(mediaQ);
+    mediaQuery.addListener(handleMediaQuery);
+    handleMediaQuery(mediaQuery);
 }
