@@ -14,30 +14,62 @@ tabs:
                 label: Recording Tag            
                 type: select             
                 options:
-                  Interview
-                  Workshop
-                  Mask
-                  Ekphrasis
+                  "Intervista":
+                    it: Intervista
+                    en: Interview
+                  "Laboratorio":
+                    it: Laboratorio
+                    en: Workshop
+                  "Maschera":
+                    it: Maschera
+                    en: Mask
+                  "Ekphrasis":
+                    it: Ekphrasis
+                    en: Ekphrasis
               stories:
                 label: Stories Tag
                 type: select
                 options:
-                  Places
-                  History
-                  Tourism and Culture
-                  Migration Politics
-                  Ship Landings
-                  Migrant Centers
-                  Archive of Migration
+                  "Luoghi":
+                    it: Luoghi
+                    en: Places
+                  "Storia":
+                    it: Storia
+                    en: History
+                  "Turismo e cultura":
+                    it: Turismo e cultura
+                    en: Tourism and Culture
+                  "Politiche migratorie":
+                    it: Politiche migratorie
+                    en: Migration Politics
+                  "Sbarchi":
+                    it: Sbarchi
+                    en: Ship Landings
+                  "Centro di accoglienza":
+                    it: Centro di accoglienza
+                    en: Migrant Centers
+                  "Archivio delle migrazioni":
+                    it: Archivio delle migrazioni
+                    en: Archive of Migration
               objects:
                 label: Objects Tag
                 type: select
                 options:
-                  Carta nautica
-                  Lijejacket
-                  Perfume
-                  Sim card
-                  Shoe insole
+                  "Carta nautica":
+                    it: Carta nautica
+                    en: Nautical chart
+                  "Giubbotto di salvataggio":
+                    it: Giubbotto di salvataggio
+                    en: Life jacket
+                  "Profumo":
+                    it: Profumo
+                    en: Perfume
+                  "Sim card":
+                    it: Carta Sim
+                    en: Sim card
+                  "Soletta di scarpa":
+                    it: Soletta di scarpa
+                    en: Shoe insole
       - width: 1/2
         sections:      
           audio:

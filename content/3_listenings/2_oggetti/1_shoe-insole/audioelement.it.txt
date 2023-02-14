@@ -10,7 +10,7 @@ Stories:
 
 ----
 
-Objects: Shoe insole
+Objects: Soletta di scarpa
 
 ----
 

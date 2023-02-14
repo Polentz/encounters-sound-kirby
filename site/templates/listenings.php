@@ -1,5 +1,12 @@
 <?php
     if ($kirby->language()->code() == 'it') {
+        $href = 'en';
+        $languageString = 'Eng';
+    } else if ($kirby->language()->code() == 'en') {
+        $href = 'it';
+        $languageString = 'Ita';
+    }
+    if ($kirby->language()->code() == 'it') {
         $storiesFilterButton = 'Filtra per Storie';
         $objectsFilterButton = 'Filtra per Oggetti';
         $clearFilters = 'Nessun Filtro';
@@ -14,6 +21,7 @@
 <body>
 <header class="header">
         <h1 class="site-title"><a href="<?= $site->url() ?>"><?= $site->title() ?></a></h1>
+        <a class="header-link" href="<?= $page->url($href) ?>"><?= $languageString ?></a>
 </header>
 
 <main class="audio">
