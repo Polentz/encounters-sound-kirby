@@ -7,11 +7,11 @@
     $objectsValue = $audioelement->objects()->value();
 ?>
 
-<div id="<?= $audioelement->title()->slug()?>-component" class="audio-component" data-stories= "<?= $audioelement->stories()->slug()?>" data-objects="<?= $audioelement->objects()->slug()?>">
+<div class="audio-component" data-stories= "<?= $audioelement->stories()->slug()?>" data-objects="<?= $audioelement->objects()->slug()?>">
     <div class="audio-header">
         <h3 class="audio-title"><?= $audioelement->title()?></h3>
         <div class="audio-btns">
-        <svg id="<?= $audioelement->title()->slug()?>" class="play-btn" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+        <svg class="play-btn" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
             <path class="play-path" d="M0 0L20 14L0 28V0Z"/>
             <path class="pause-path" d="M0 0H8V28H0V0Z"/>
             <path class="pause-path" d="M10 0H18V28H10V0Z"/>
@@ -36,10 +36,10 @@
             <button class="btn-component" data-filter="<?= $audioelement->recording()->slug() ?>"><?= $recordingField['options'][$recordingValue][$kirby->language()->code()] ?></button>
         <?php endif ?>
         <?php if ($audioelement->stories()->isNotEmpty()): ?>
-            <button class="btn-component" data-filter="<?= $audioelement->stories()->slug() ?>"><?= $storiesField['options'][$storiesValue][$kirby->language()->code()] ?></button>
+            <button class="btn-component" data-filter="<?= $audioelement->stories()->slug() ?>"><?= $audioelement->stories() ?></button>
         <?php endif ?>
         <?php if ($audioelement->objects()->isNotEmpty()): ?>
-            <button class="btn-component" data-filter="<?= $audioelement->objects()->slug() ?>"><?= $objectsField['options'][$objectsValue][$kirby->language()->code()] ?></button>
+            <button class="btn-component" data-filter="<?= $audioelement->objects()->slug() ?>"><?= $audioelement->objects() ?></button>
         <?php endif ?>
     </div>
     <div class="audio-info">

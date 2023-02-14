@@ -1,0 +1,29 @@
+Title: Book Info
+
+----
+
+Infotitle: Encounters in an Archive: Objects of Migration, Photo-Objects of Art History
+
+----
+
+Hasimage: true
+
+----
+
+Columnone: Global migration is one of the most pressing matters facing contemporaneity, but also a leitmotif in the work of Massimo Ricciardo. In this project, the artist creates a dialogue between photographic objects from the Photothek of the Kunsthistorisches Institut in Florenz and objects of migration: things that are functional to the journey, such as passports and nautical charts, but also to identity and memory, such as family photographs, diaries, a sample of earth from the homeland. Who do these 'talking' objects belong to? What are the appropriate artistic and curatorial practices if one decides to collect, archive, exhibit, transform them? The dialogues prompted by Ricciardo's installation continue in this book and involve a polyphony of voices.
+
+----
+
+Columntwo: 
+
+----
+
+Credits: (link: https://publishing.viaindustriae.it/ text: Viaindustriae publishing)
+
+----
+
+Image: - file://WeUN0nRKZFGSQDG0
+
+----
+
+Uuid: PJYKDNnywy0lHeyV

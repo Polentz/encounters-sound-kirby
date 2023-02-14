@@ -1,0 +1,37 @@
+Title: Website Info
+
+----
+
+Infotitle: Un archivio sonoro delle migrazioni
+
+----
+
+Hasimage: false
+
+----
+
+Columnone:
+
+*Sound objects of migrations* is an online sound archive, curated by Massimo Ricciardo and Luca Morino, accompanying the book *Encounters in an Archive: Objects of Migration, Photo-Objects of Art History* and divided into two sections: *Stories* and *Objects*. 
+
+The *Stories* section presents the testimonies of encounters, events, soundscapes, and travels collected during the project's development. The *Objects* section presents excerpts from the recordings produced for the limited edition audio-cassette Similitude: descriptions of the objects and photographs featured in the installation Encounters in an Archive through the systematic reading of the archival sheets.
+
+----
+
+Columntwo:
+
+This dichotomy echoes the "pair" theme that permeates the project in its entirety and aims to re-present the theme of the encounter, the semantic connections that the objects and photographs on display have stimulated and still stimulate.
+
+*Sound objects of migrations* is thus an archive of voices, sound and verbal documentation, a virtual ravine, open and becoming; a place, ultimately, for the personal experience of encounters.
+
+----
+
+Credits: 
+
+----
+
+Image: 
+
+----
+
+Uuid: bqhTdpKSnQiuY11s

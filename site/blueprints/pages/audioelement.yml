@@ -28,48 +28,10 @@ tabs:
                     en: Ekphrasis
               stories:
                 label: Stories Tag
-                type: select
-                options:
-                  "Luoghi":
-                    it: Luoghi
-                    en: Places
-                  "Storia":
-                    it: Storia
-                    en: History
-                  "Turismo e cultura":
-                    it: Turismo e cultura
-                    en: Tourism and Culture
-                  "Politiche migratorie":
-                    it: Politiche migratorie
-                    en: Migration Politics
-                  "Sbarchi":
-                    it: Sbarchi
-                    en: Ship Landings
-                  "Centro di accoglienza":
-                    it: Centro di accoglienza
-                    en: Migrant Centers
-                  "Archivio delle migrazioni":
-                    it: Archivio delle migrazioni
-                    en: Archive of Migration
+                type: text
               objects:
                 label: Objects Tag
-                type: select
-                options:
-                  "Carta nautica":
-                    it: Carta nautica
-                    en: Nautical chart
-                  "Giubbotto di salvataggio":
-                    it: Giubbotto di salvataggio
-                    en: Life jacket
-                  "Profumo":
-                    it: Profumo
-                    en: Perfume
-                  "Sim card":
-                    it: Carta Sim
-                    en: Sim card
-                  "Soletta di scarpa":
-                    it: Soletta di scarpa
-                    en: Shoe insole
+                type: text
       - width: 1/2
         sections:      
           audio:

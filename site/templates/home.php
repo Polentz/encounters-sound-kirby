@@ -1,11 +1,11 @@
 <?php
     if ($kirby->language()->code() == 'it') {
         $href = 'en';
-        $languageString = 'Eng';
+        $languageString = 'Ita';
         $button = 'Entra';
     } else if ($kirby->language()->code() == 'en') {
         $href = 'it';
-        $languageString = 'Ita';
+        $languageString = 'Eng';
         $button = 'Enter';
     }
     $listenings = page('listenings')->children()->listed();

@@ -1,10 +1,10 @@
 <?php
     if ($kirby->language()->code() == 'it') {
         $href = 'en';
-        $languageString = 'Eng';
+        $languageString = 'Ita';
     } else if ($kirby->language()->code() == 'en') {
         $href = 'it';
-        $languageString = 'Ita';
+        $languageString = 'Eng';
     }
     if ($kirby->language()->code() == 'it') {
         $storiesFilterButton = 'Filtra per Storie';
@@ -69,6 +69,4 @@
 </footer>
 
 <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
-<?= js("assets/js/audio.js") ?>
-<?= js("assets/js/filter.js") ?>
 <?= snippet('footer') ?>
