@@ -16,12 +16,29 @@ if (anchorTags) {
     });
 }
 
-const mainWrapper = document.querySelector(".main-wrapper");
 const mainLink = document.querySelector(".main-link");
-const mediaQuery = window.matchMedia("(max-width: 600px)");
-const mainLinkHtml = mainLink.innerHTML;
+const langLink = document.querySelector(".header-link");
+// const mediaQuery = window.matchMedia("(max-width: 600px)");
+const langLinkHtml = langLink.innerHTML;
 
-if (mainWrapper, mainLink) {
+if (langLinkHtml == "Ita") {
+    langLink.addEventListener("mouseenter", () => {
+        langLink.innerHTML = "Eng";
+    });
+    langLink.addEventListener("mouseleave", () => {
+        langLink.innerHTML = "Ita";
+    });
+} else if (langLinkHtml == "Eng") {
+    langLink.addEventListener("mouseenter", () => {
+        langLink.innerHTML = "Ita";
+    });
+    langLink.addEventListener("mouseleave", () => {
+        langLink.innerHTML = "Eng";
+    });
+}
+
+if (mainLink) {
+    const mainLinkHtml = mainLink.innerHTML;
     if (mainLinkHtml == "Enter") {
         mainLink.addEventListener("mouseenter", () => {
             mainLink.innerHTML = "Listen";
@@ -37,7 +54,6 @@ if (mainWrapper, mainLink) {
             mainLink.innerHTML = "Entra";
         });
     }
-
     // const handleMediaQuery = (e) => {
     //     if (e.matches) {
     //         mainLink.innerHTML = "Listen";
@@ -50,14 +66,14 @@ if (mainWrapper, mainLink) {
     // handleMediaQuery(mediaQuery);
 }
 
-
 const path = document.querySelector(".line-path");
-const pathLength = path.getTotalLength();
-console.log(pathLength);
-path.style.strokeDasharray = pathLength + ' ' + pathLength;
-path.style.strokeDashoffset = pathLength;
-window.addEventListener("scroll", (e) => {
-    const scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-    const drawLength = pathLength * scrollPercentage;
-    path.style.strokeDashoffset = pathLength - drawLength;
-});
+if (path) {
+    const pathLength = path.getTotalLength();
+    path.style.strokeDasharray = pathLength + ' ' + pathLength;
+    path.style.strokeDashoffset = pathLength;
+    window.addEventListener("scroll", (e) => {
+        const scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+        const drawLength = pathLength * scrollPercentage;
+        path.style.strokeDashoffset = pathLength - drawLength;
+    });
+}
