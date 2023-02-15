@@ -1,0 +1,22 @@
+title: Credits
+
+columns: 
+  - width: 1/2
+    sections:
+      text:
+        type: fields
+        fields:
+          columnone:
+            label: Text
+            type: textarea
+  - width: 1/2
+    sections:
+      logo:
+        label: Loghi
+        type: files
+        template: logo
+        image:
+          back: "#fff"
+          ratio: 1/1
+          cover: true
+ 

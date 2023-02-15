@@ -1,0 +1,13 @@
+title: Logo
+
+fields:
+  alt:
+    type: text
+    label: Alternative text
+    width: 1/2
+  customheight:
+    type: number
+    label: Dimensioni
+    width: 1/4
+    after: px
+    max: 200

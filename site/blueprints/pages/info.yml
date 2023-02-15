@@ -42,7 +42,6 @@ columns:
       image:
         type: files
         max: 1
-        min: 1
         multiple: false
         template: image    
         when:

@@ -1,0 +1,21 @@
+Alt: 
+
+----
+
+Caption: 
+
+----
+
+Customheight: 80
+
+----
+
+Sort: 6
+
+----
+
+Uuid: 4X4qBfaRqHj5irQW
+
+----
+
+Template: logo

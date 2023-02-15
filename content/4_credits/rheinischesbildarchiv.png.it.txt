@@ -1,0 +1,21 @@
+Alt: 
+
+----
+
+Caption: 
+
+----
+
+Customheight: 80
+
+----
+
+Sort: 7
+
+----
+
+Uuid: cNzhqsuYPRNniSP2
+
+----
+
+Template: logo
