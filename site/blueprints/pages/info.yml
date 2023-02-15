@@ -8,17 +8,17 @@ columns:
         type: fields
         fields:
           infotitle:
-            label: Title
+            label: Titolo
             type: text
       question:
         type: fields
         fields:
           hasimage:
             type: toggle
-            label: Need an image?
+            label: Vuoi inserire un'immagine nella colonna di destra?
             text:
               - "no"
-              - "yes"
+              - "sì"
   left:
     width: 1/2
     sections:
@@ -26,7 +26,7 @@ columns:
         type: fields
         fields:
           columnone:
-            label: Text
+            label: Testo (colonna di sinistra)
             type: textarea
   right:
     width: 1/2
@@ -35,7 +35,7 @@ columns:
         type: fields
         fields:
           columntwo:
-            label: false
+            label: Testo (colonna di destra)
             type: textarea
             when:
               hasimage: false
@@ -47,11 +47,15 @@ columns:
         when:
           hasimage: true    
   footer:
-    width: 1/1
+    width: 1/2
     sections:
       credits:
         type: fields
         fields:
           credits:
-            label: Credits
+            label: Testo aggiuntivo in font Mono
             type: textarea
+          info: 
+            label: false
+            type: info
+            text: 'Utile per: link, crediti, commenti, testi brevi, ecc.'

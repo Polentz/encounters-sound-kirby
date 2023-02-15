@@ -2,7 +2,7 @@ title: Audio Element
 
 tabs:
   audioelement:
-    label: Audio Element
+    label: Audio
     icon: audio  
     columns: 
       - width: 1/2
@@ -11,8 +11,9 @@ tabs:
             type: fields
             fields:
               recording:
-                label: Recording Tag            
-                type: select             
+                label: Tipologia di ascolto            
+                type: select 
+                help: 'Questa tag viene tradotta automaticamente nell'altra lingua disponibile.'           
                 options:
                   "Intervista":
                     it: Intervista
@@ -26,16 +27,11 @@ tabs:
                   "Ekphrasis":
                     it: Ekphrasis
                     en: Ekphrasis
-              stories:
-                label: Stories Tag
-                type: text
-              objects:
-                label: Objects Tag
-                type: text
+
       - width: 1/2
         sections:      
           audio:
-            label: Upload audio file
+            label: File audio
             type: files
             width: 1/3
             template: 
@@ -44,6 +40,58 @@ tabs:
             max: 1
             size: small
 
+      - width: 1/2
+        sections:
+          stories:
+            type: fields
+            fields:
+              stories:
+                label: 'Assegna un filtro STORIE'
+                help: 'Attenzione ai refusi: il tag che indichi qui verrà automaticamente inserito nel menu "FILTRA PER STORIE".'
+                type: tags
+                max: 1
+      - width: 1/2
+        sections:
+          storiesinfo:
+            type: fields
+            fields:
+              storiesinfo:
+                label: 'Suggerimenti (filtri STORIE)'
+                type: info
+                text: |
+                  Luoghi / Places
+                  Storia / History
+                  Turismo e cultura / Tourism and Culture
+                  Politiche migratorie / Migration Politics
+                  Sbarchi / Ship Landings
+                  Centro di accoglienza / Migrant Centers
+                  Archivio delle migrazioni / Archive of Migration
+                  et al.
+      - width: 1/2
+        sections:
+          objects:
+            type: fields
+            fields:
+              objects:
+                label: 'Assegna un filtro OGGETTI'
+                help: 'Attenzione ai refusi: il tag che indichi qui verrà automaticamente inserito nel menu "FILTRA PER OGGETTI".'                
+                type: tags
+                max: 1
+      - width: 1/2
+        sections:
+          objectsinfo:
+            type: fields
+            fields:
+              objectsinfo:
+                label: 'Suggerimenti (filtri OGGETTI)'
+                type: info
+                text: |
+                  Carta nautica / Nautical chart
+                  Giubbotto di salvataggio / Life jacket
+                  Profumo / Perfume
+                  Carta Sim / Sim card
+                  Soletta di scarpa / Shoe insole
+                    et al.
   indexcard:
     label: Index card
     icon: grid-full   
@@ -54,7 +102,9 @@ tabs:
             type: fields
             fields:
               information: 
+                label: Informazioni
                 type: textarea
               text: 
+                label: Descrizione e informazioni aggiuntive
                 type: textarea
   

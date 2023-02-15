@@ -22,7 +22,7 @@ Berlin
 
 ----
 
-Text: Exercitationem laboriosam eveniet, praesentium aliquid assumenda consequuntur quibusdam tenetur, excepturi sunt minima dolor consequatur deleniti dolorem.
+Text: This is a much longer text: exercitationem laboriosam eveniet, praesentium aliquid assumenda consequuntur quibusdam tenetur, excepturi sunt minima dolor consequatur deleniti dolorem.
 
 ----
 

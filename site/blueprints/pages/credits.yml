@@ -7,16 +7,30 @@ columns:
         type: fields
         fields:
           columnone:
-            label: Text
+            label: Testo (colonna di sinistra)
             type: textarea
   - width: 1/2
     sections:
       logo:
-        label: Loghi
+        label: Loghi (colonna di destra)
         type: files
         template: logo
         image:
           back: "#fff"
           ratio: 1/1
           cover: true
+  - width: 1/1
+    sections:
+      footer:
+        type: fields
+        fields:
+          footerleft:
+            label: Footer
+            type: text
+            width: 1/2
+            disabled: true
+          footerright:
+            label: false
+            type: text
+            width: 1/2
  

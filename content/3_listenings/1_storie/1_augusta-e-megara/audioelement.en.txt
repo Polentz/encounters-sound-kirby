@@ -22,10 +22,7 @@ Berlin
 
 ----
 
-Text:
-
-This is a much longer text:
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem laboriosam eveniet, praesentium aliquid assumenda consequuntur quibusdam tenetur, excepturi sunt minima dolor consequatur deleniti dolorem. Nam alias libero velit odio tempora quisquam.
+Text: This is a much longer text: lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem laboriosam eveniet, praesentium aliquid assumenda consequuntur quibusdam tenetur, excepturi sunt minima dolor consequatur deleniti dolorem. Nam alias libero velit odio tempora quisquam.
 
 ----
 

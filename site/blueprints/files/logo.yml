@@ -3,11 +3,12 @@ title: Logo
 fields:
   alt:
     type: text
-    label: Alternative text
-    width: 1/2
+    label: Alt tag (testo alternativo)
   customheight:
     type: number
-    label: Dimensioni
+    label: Dimensioni logo
     width: 1/4
+    before: 'height:'
     after: px
     max: 200
+    step: 8

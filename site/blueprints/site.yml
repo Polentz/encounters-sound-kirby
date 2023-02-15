@@ -2,7 +2,7 @@ title: Site
 
 tabs:
   websitepages:
-    label: Website Pages
+    label: Pagine del sito
     sections:
       pages:
         type: pages
@@ -14,19 +14,30 @@ tabs:
           - listenings
           - credits
           - page
+  websitesettings:
+    label: Contenuti globali
+    sections:
+      settings:
+        type: fields
+        fields:
+          year:
+            label: Footer (copyright)
+            type: number
+            width: 1/4
+            before: '©'
   seo:
-    label: Website SEO
+    label: SEO del sito
     sections:
       meta:
         type: fields
         fields: 
           description:
-            label: Website description
+            label: Descrizione
             type: textarea
             width: 1/2
             buttons: false
           keywords:
-            label: Website keywords
+            label: Keywords
             type: tags
             separator: ','
             width: 1/2

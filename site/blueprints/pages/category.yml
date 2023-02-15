@@ -3,7 +3,7 @@ title: Category
 sections:
   audio:
     type: pages
-    label: List of audios
+    label: Lista degli ascolti
     image: false
     status: all
     template:

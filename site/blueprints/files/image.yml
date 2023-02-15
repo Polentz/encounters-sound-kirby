@@ -3,8 +3,7 @@ title: Image
 fields:
   alt:
     type: text
-    label: Alternative text
-    width: 1/2
+    label: Alt tag (testo alternativo)
   caption:
     type: text
-    width: 1/2
+    label: Didascalia (se necessaria)

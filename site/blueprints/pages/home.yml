@@ -2,7 +2,7 @@ title: Homepage
 
 sections:
   pagesections:
-    label: Page sections
+    label: Sezioni
     type: pages
     status: all
     image: false

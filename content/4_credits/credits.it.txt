@@ -29,7 +29,13 @@ Marta Abbado, Elena Agudio, Fatima- Cinzia Ahmad, Antonella Amato, Andrea d’Am
 
 Gli oggetti presenti in questo progetto provengono dall'archivio “Objects of Escape – Inventories of Migration” creato da Massimo Ricciardo e Thomas Kilpper.
 
-Copyright © 2023 Luca Morino, Massimo Ricciardo
+----
+
+Footerleft: Design & Code Giulia Polenta
+
+----
+
+Footerright: © 2023 Luca Morino Massimo Ricciardo
 
 ----
 
