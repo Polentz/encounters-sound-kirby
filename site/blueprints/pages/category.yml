@@ -1,10 +1,50 @@
 title: Category
+icon: bookmark
+options:
+  preview: false
+  navigation:
+    status: listed
+    template: all
 
 sections:
-  audio:
-    type: pages
+  mypagetable:
+    type: pagetable
+
     label: Lista degli ascolti
     image: false
     status: all
     template:
       - audioelement
+sections:
+  mypagetable:
+    headline: Lista degli ascolti
+    type: pagetable
+    status: all
+    template: audioelement
+    image: false
+    columns:
+      title:
+        mobile: true
+        sortable: false
+        type: text
+        label: Titolo
+        text: '{{ page.title }}'
+        width: 1/3
+      recording:
+        mobile: false
+        sortable: false
+        type: text
+        label: Tipologia di ascolto 
+        text: '{{ page.recording }}'
+      stories:
+        mobile: false
+        sortable: false
+        type: text
+        label: 'Categorie: storie'
+        text: '{{ page.stories }}'
+      objects:
+        mobile: false
+        sortable: false
+        type: text
+        label: 'Categorie: oggetti'
+        text: '{{ page.objects }}'

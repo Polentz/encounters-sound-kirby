@@ -1,4 +1,9 @@
 title: Info
+options:
+  preview: false
+  navigation:
+    status: listed
+    template: all
 
 columns:
   title:

@@ -4,6 +4,6 @@ sections:
   categories:
     type: pages
     label: STORIE / OGGETTI
-    image: false
     status: published
     sortable: false
+    template: category

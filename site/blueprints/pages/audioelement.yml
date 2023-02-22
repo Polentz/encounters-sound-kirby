@@ -1,4 +1,9 @@
 title: Audio Element
+options:
+  preview: false
+  navigation:
+    status: listed
+    template: all
 
 tabs:
   audioelement:

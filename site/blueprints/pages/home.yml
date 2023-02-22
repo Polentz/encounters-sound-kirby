@@ -2,13 +2,12 @@ title: Homepage
 
 sections:
   pagesections:
-    label: Sezioni
+    label: Sezioni della pagina
     type: pages
     status: all
     image: false
     info: "{{ page.intendedTemplate }}"
-    templates:
-      - info
+    templates: info
 
 
 

@@ -168,6 +168,6 @@ button:visited {
 }
 
 ::selection {
-    color: var(--green);
+    color: var(--blue);
     background-color: transparent;
 }
