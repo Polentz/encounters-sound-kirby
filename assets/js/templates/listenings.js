@@ -28,8 +28,8 @@ openFilterMenu(filterObjectsBtn, filtersObjects, "show", filtersStories);
 closeFilterMenu(filtersStoriesClose, filtersStories, "show");
 closeFilterMenu(filtersObjectsClose, filtersObjects, "show");
 
+const tagsAndBtns = document.querySelectorAll(".btn-component");
 const filterBtns = document.querySelectorAll(".filter-button");
-const tags = document.querySelectorAll(".btn-component");
 const filterClear = document.querySelectorAll(".filter-clear");
 
 filterBtns.forEach(btn => {
@@ -64,10 +64,23 @@ const applyFilter = (e, btn) => {
         const audioTagObjects = component.dataset.objects;
         const audioTagSubjects = component.dataset.subjects;
         const audioTags = [audioTagStories, audioTagObjects, audioTagSubjects];
+        const audioLabels = component.querySelectorAll(".btn-component");
+        audioLabels.forEach(label => {
+            if (label.dataset.filter.includes(filterName)) {
+                label.classList.add("selected");
+            } else {
+                label.classList.remove("selected");
+            };
+        });
         if (audioTags.includes(filterName)) {
             component.classList.remove("unfiltered");
             btn.classList.add("sorted");
-            // audioTags.classList.add("sorted");
+        } else {
+            component.classList.add("unfiltered");
+        }
+        if (audioTags.includes(filterName)) {
+            component.classList.remove("unfiltered");
+            btn.classList.add("sorted");
         } else {
             component.classList.add("unfiltered");
         }
@@ -77,8 +90,9 @@ const applyFilter = (e, btn) => {
 }
 
 const removeFilters = () => {
-    filterBtns.forEach(b => {
-        b.classList.remove("sorted");
+    tagsAndBtns.forEach(label => {
+        label.classList.remove("selected");
+        label.classList.remove("sorted");
     });
     audioComponent.forEach(component => {
         component.classList.remove("unfiltered");

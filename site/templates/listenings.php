@@ -44,37 +44,45 @@
 </main>
 
 <section id="filters-stories" class="filters">
-    <div class="filters-wrapper">
-        <p class="filters-title"><?= $storiesTopic ?></p>
-        <?php foreach ($storiesFilters as $filter): ?>
-            <button class="btn-component filter-button" data-filter="<?= $filter->slug() ?>"><?= $filter ?></button>
-        <?php endforeach ?>
-        <button class="btn-component filter-clear"><?= $clearFilters ?></button>
-        <svg id="filters-stories-close"  viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 2L2 10M10 10L2 2" stroke-linecap="square" stroke-linejoin="round" />
-        </svg>
-    </div>
-    <div class="filters-wrapper">
-        <p class="filters-title"><?= $storiesSubject ?></p>
-        <?php foreach ($storiesSubjects as $subject): ?>
-            <button class="btn-component filter-button" data-filter="<?= $subject->slug() ?>"><?= $subject ?></button>
-        <?php endforeach ?>
-        <button class="btn-component filter-clear"><?= $clearFilters ?></button>
-        <svg id="filters-stories-close"  viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 2L2 10M10 10L2 2" stroke-linecap="square" stroke-linejoin="round" />
-        </svg>
+    <div class="filters-container">
+            <div class="filters-wrapper">   
+                <p class="filters-title"><?= $storiesSubject ?></p>
+                <?php foreach ($storiesSubjects as $subject): ?>
+                    <button class="btn-component filter-button" data-filter="<?= $subject->slug() ?>"><?= $subject ?></button>
+                <?php endforeach ?>
+            </div>
+            <div class="filters-wrapper">
+                <p class="filters-title"><?= $storiesTopic ?></p>
+                <?php foreach ($storiesFilters as $filter): ?>
+                    <button class="btn-component filter-button" data-filter="<?= $filter->slug() ?>"><?= $filter ?></button>
+                <?php endforeach ?>
+            </div>
+            <div class="filters-wrapper">
+                <button class="btn-component filter-clear"><?= $clearFilters ?></button>
+            </div>
+            <div class="filters-wrapper">
+                <svg id="filters-stories-close"  viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2L2 10M10 10L2 2" stroke-linecap="square" stroke-linejoin="round" />
+                </svg>
+            </div>
     </div>
 </section>
 
 <section id="filters-objects" class="filters">
-    <div class="filters-wrapper">
-        <?php foreach ($objectsFilters as $filter): ?>
-            <button class="btn-component filter-button" data-filter="<?= $filter->slug() ?>"><?= $filter ?></button>
-        <?php endforeach ?>
-        <button class="btn-component filter-clear"><?= $clearFilters ?></button>
-        <svg id="filters-objects-close"  viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 2L2 10M10 10L2 2" stroke-linecap="square" stroke-linejoin="round" />
-        </svg>
+    <div class="filters-container">
+        <div class="filters-wrapper">
+            <?php foreach ($objectsFilters as $filter): ?>
+                <button class="btn-component filter-button" data-filter="<?= $filter->slug() ?>"><?= $filter ?></button>
+            <?php endforeach ?>
+        </div>
+        <div class="filters-wrapper">
+            <button class="btn-component filter-clear"><?= $clearFilters ?></button>
+        </div>
+        <div class="filters-wrapper">
+            <svg id="filters-objects-close"  viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2L2 10M10 10L2 2" stroke-linecap="square" stroke-linejoin="round" />
+            </svg>
+        </div>
     </div>
 </section>
 

@@ -40,11 +40,11 @@
         <?php if ($audioelement->recording()->isNotEmpty()): ?>
             <button class="btn-component" data-filter="<?= $audioelement->recording()->slug() ?>"><?= $recordingField['options'][$recordingValue][$kirby->language()->code()] ?></button>
         <?php endif ?>
+        <?php if ($audioelement->subjects()->isNotEmpty()): ?>
+            <button class="btn-component" data-filter="<?= $audioelement->subjects()->slug() ?>"><?= $audioelement->subjects() ?></button>
+        <?php endif ?>
         <?php if ($audioelement->stories()->isNotEmpty()): ?>
             <button class="btn-component" data-filter="<?= $audioelement->stories()->slug() ?>"><?= $audioelement->stories() ?></button>
-        <?php endif ?>
-        <?php if ($audioelement->subjects()->isNotEmpty()): ?>
-            <div style="display: none;" data-filter="<?= $audioelement->subjects()->slug() ?>"></div>
         <?php endif ?>
         <?php if ($audioelement->objects()->isNotEmpty()): ?>
             <button class="btn-component" data-filter="<?= $audioelement->objects()->slug() ?>"><?= $audioelement->objects() ?></button>
