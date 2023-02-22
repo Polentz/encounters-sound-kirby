@@ -72,6 +72,29 @@ tabs:
                   Centro di accoglienza / Migrant Centers
                   Archivio delle migrazioni / Archive of Migration
                   et al.
+
+      - width: 1/2
+        sections:
+          subjects:
+            type: fields
+            fields:
+              subjects:
+                label: 'Assegna un filtro SOGGETTO'
+                help: 'Attenzione ai refusi: il tag che indichi qui verrà automaticamente inserito nel menu "FILTRA PER STORIE".'
+                type: tags
+                max: 1
+      - width: 1/2
+        sections:
+          subjectsinfo:
+            type: fields
+            fields:
+              subjectsinfo:
+                label: 'Suggerimenti (filtri SOGGETTO)'
+                type: info
+                text: |
+                  Carlo Parini
+                  et al.
+
       - width: 1/2
         sections:
           objects:

@@ -1,13 +1,18 @@
 <?php
     $recordingField = $audioelement->blueprint()->field('recording');
     $recordingValue = $audioelement->recording()->value();
+
     $storiesField = $audioelement->blueprint()->field('stories');
     $storiesValue = $audioelement->stories()->value();
+
+    $subjectsField = $audioelement->blueprint()->field('subjects');
+    $subjectsValue = $audioelement->subjects()->value();
+    
     $objectsField = $audioelement->blueprint()->field('objects');
     $objectsValue = $audioelement->objects()->value();
 ?>
 
-<div class="audio-component" data-stories= "<?= $audioelement->stories()->slug()?>" data-objects="<?= $audioelement->objects()->slug()?>">
+<div class="audio-component" data-stories= "<?= $audioelement->stories()->slug()?>" data-subjects="<?= $audioelement->subjects()->slug()?>" data-objects="<?= $audioelement->objects()->slug()?>">
     <div class="audio-header">
         <h3 class="audio-title"><?= $audioelement->title()?></h3>
         <div class="audio-btns">
@@ -37,6 +42,9 @@
         <?php endif ?>
         <?php if ($audioelement->stories()->isNotEmpty()): ?>
             <button class="btn-component" data-filter="<?= $audioelement->stories()->slug() ?>"><?= $audioelement->stories() ?></button>
+        <?php endif ?>
+        <?php if ($audioelement->subjects()->isNotEmpty()): ?>
+            <div style="display: none;" data-filter="<?= $audioelement->subjects()->slug() ?>"></div>
         <?php endif ?>
         <?php if ($audioelement->objects()->isNotEmpty()): ?>
             <button class="btn-component" data-filter="<?= $audioelement->objects()->slug() ?>"><?= $audioelement->objects() ?></button>

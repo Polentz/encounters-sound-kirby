@@ -29,6 +29,7 @@ closeFilterMenu(filtersStoriesClose, filtersStories, "show");
 closeFilterMenu(filtersObjectsClose, filtersObjects, "show");
 
 const filterBtns = document.querySelectorAll(".filter-button");
+const tags = document.querySelectorAll(".btn-component");
 const filterClear = document.querySelectorAll(".filter-clear");
 
 filterBtns.forEach(btn => {
@@ -61,10 +62,12 @@ const applyFilter = (e, btn) => {
     audioComponent.forEach(component => {
         const audioTagStories = component.dataset.stories;
         const audioTagObjects = component.dataset.objects;
-        const audioTags = [audioTagStories, audioTagObjects];
+        const audioTagSubjects = component.dataset.subjects;
+        const audioTags = [audioTagStories, audioTagObjects, audioTagSubjects];
         if (audioTags.includes(filterName)) {
             component.classList.remove("unfiltered");
             btn.classList.add("sorted");
+            // audioTags.classList.add("sorted");
         } else {
             component.classList.add("unfiltered");
         }

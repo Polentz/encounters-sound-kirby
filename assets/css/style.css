@@ -746,6 +746,7 @@ input.seek-slider::-webkit-slider-thumb {
     flex-direction: column;
     align-items: center;
     row-gap: var(--small-margin);
+    flex: 0 1 50%;
 }
 
 .filters-wrapper .btn-component:hover {
@@ -762,6 +763,13 @@ input.seek-slider::-webkit-slider-thumb {
     stroke: var(--txt-color);
     stroke-width: 1px;
     margin-top: var(--general-margin);
+}
+
+.filters-title {
+    font-family: "ABCDiatype Mono";
+    font-size: var(--header-title);
+    text-transform: uppercase;
+    margin-bottom: var(--general-margin);
 }
 
 @media screen and (max-width: 1030px) {
