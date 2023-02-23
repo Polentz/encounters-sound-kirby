@@ -40,7 +40,6 @@
 
     <footer class="footer">
         <a class="footer-link" href="<?= page('credits')->url() ?>"><?= page('credits')->title() ?></a>
-        <!-- <a class="footer-link" href="<?= $page->url($href) ?>"><?= $languageString ?></a> -->
         <p class="footer-link">© <?= $site->year() ?></p>
     </footer>
 

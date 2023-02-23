@@ -34,8 +34,8 @@
 </section>
 
 <footer class="footer">
-    <p class="footer-link"><?= $page->footerleft()->inline() ?></p>
-    <p class="footer-link"><?= $page->footerright()->inline() ?></p>
+    <p class="footer-link">Design & Code Giulia Polenta</p>
+    <p class="footer-link">© <?= $site->year() ?></p>
 </footer>
 
 <?= snippet('footer') ?>

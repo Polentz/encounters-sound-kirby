@@ -19,18 +19,4 @@ columns:
           back: "#fff"
           ratio: 1/1
           cover: true
-  - width: 1/1
-    sections:
-      footer:
-        type: fields
-        fields:
-          footerleft:
-            label: Footer
-            type: text
-            width: 1/2
-            disabled: true
-          footerright:
-            label: false
-            type: text
-            width: 1/2
  

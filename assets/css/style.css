@@ -146,7 +146,16 @@ a:hover::before {
     -ms-flex-align: start;
     align-items: flex-start;
     padding-top: var(--small-margin);
+    padding-bottom: var(--small-margin);
     z-index: 6;
+}
+
+.footer p:first-of-type {
+    text-align: left;
+}
+
+.footer p:last-of-type {
+    text-align: right;
 }
 
 .header::after {
@@ -1050,10 +1059,6 @@ input.seek-slider::-webkit-slider-thumb {
 
     }
 
-    .main-link:hover {
-        margin: var(--small-margin) 0;
-    }
-
     .text-wrapper {
         padding: 0;
         margin-bottom: var(--header-height);
@@ -1171,5 +1176,16 @@ input.seek-slider::-webkit-slider-thumb {
         background-color: var(--txt-color);
         -webkit-filter: none;
         filter: none;
+    }
+
+    .btn-component.sorted:hover,
+    .filter-clear:hover {
+        background-color: var(--txt-color);
+        color: var(--bg-color);
+    }
+
+    .filter-button:hover {
+        background-color: var(--bg-color);
+        color: var(--txt-color);
     }
 }

@@ -30,14 +30,14 @@
         content="<?= $site->description() ?>">
     <meta property="og:url" content="<?= $page->url() ?>">
     <meta property="og:site_name" content="<?= $site->title()->inline()?>">
-    <meta property="og:image" content="/assets/images/sound-objects-of-migrations.jpg">
-    <meta property="og:image" content="/assets/images/sound-objects-of-migrations.jpg">
+    <meta property="og:image" content="<?= $site->image()->url() ?>">
+    <meta property="og:image" content="<?= $site->image()->url() ?>">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description"
         content="<?= $site->description() ?>">
     <meta name="twitter:title"
         content="<?= $site->description() ?>">
-    <meta property="og:image" content="/assets/images/sound-objects-of-migrations.jpg">
+    <meta property="og:image" content="<?= $site->image()->url() ?>">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="shortcut icon" type="image/png" sizes="48x48" href="/assets/favicons/favicon-48.png">
     <link rel="shortcut icon" type="image/png" sizes="192x192" href="/assets/favicons/favicon-192.png">
