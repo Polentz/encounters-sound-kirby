@@ -248,12 +248,23 @@ audioComponent.forEach(component => {
     });
 });
 
-let draggableElems = document.querySelectorAll(".draggable");
+const mediaQuery = window.matchMedia("(max-width: 600px)");
+let draggableElems = document.querySelectorAll(".audio-info-card");
 let draggies = []
-
-for (let draggableElem of draggableElems) {
-    let draggie = new Draggabilly(draggableElem, {
-        containment: "html"
-    });
-    draggies.push(draggie);
-}
+const draggableOnDesktop = (e) => {
+    if (e.matches) {
+        for (let draggableElem of draggableElems) {
+            draggableElem.classList.remove("draggable");
+        }
+    } else {
+        for (let draggableElem of draggableElems) {
+            draggableElem.classList.add("draggable");
+            let draggie = new Draggabilly(draggableElem, {
+                containment: "html"
+            });
+            draggies.push(draggie);
+        }
+    }
+};
+mediaQuery.addListener(draggableOnDesktop);
+draggableOnDesktop(mediaQuery);

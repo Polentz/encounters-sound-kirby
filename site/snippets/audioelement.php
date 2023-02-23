@@ -52,7 +52,7 @@
     </div>
     <div class="audio-info">
         <a class="audio-info-btn">Index card</a>
-        <div class="audio-info-card draggable">
+        <div class="audio-info-card">
             <div class="audio-info-card-wrapper">
                 <p class="audio-info-card-title"><?= $audioelement->title()?></p>
                 <div class="audio-info-card-info">
