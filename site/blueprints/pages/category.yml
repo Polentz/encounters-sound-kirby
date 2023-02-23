@@ -5,6 +5,18 @@ options:
   navigation:
     status: listed
     template: all
+  delete:
+    admin: true
+    editor: false
+  changeSlug:
+    admin: true
+    editor: false
+  changeTitle:
+    admin: true
+    editor: false
+  duplicate:
+    admin: true
+    editor: false
 
 sections:
   listenings:

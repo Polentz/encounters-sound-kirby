@@ -1,4 +1,14 @@
 title: Site
+options:
+  delete:
+    admin: true
+    editor: false
+  changeSlug:
+    admin: true
+    editor: false
+  duplicate:
+    admin: true
+    editor: false
 
 tabs:
   websitepages:
@@ -13,7 +23,6 @@ tabs:
           - home
           - listenings
           - credits
-          - page
   websitesettings:
     label: Contenuti globali
     sections:

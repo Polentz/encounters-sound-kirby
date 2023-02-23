@@ -1,4 +1,14 @@
 title: Listenings
+options:
+  delete:
+    admin: true
+    editor: false
+  changeSlug:
+    admin: true
+    editor: false
+  duplicate:
+    admin: true
+    editor: false
 
 sections:
   categories:

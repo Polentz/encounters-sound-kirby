@@ -56,10 +56,14 @@
             <div class="audio-info-card-wrapper">
                 <p class="audio-info-card-title"><?= $audioelement->title()?></p>
                 <div class="audio-info-card-info">
-                    <?= $audioelement->information()->kirbytext()?>
+                    <?php if ($audioelement->information()->isNotEmpty()): ?>
+                        <?= $audioelement->information()->kirbytext()?>
+                    <?php endif ?>
                 </div>
                 <div class="audio-info-card-text">
-                    <?= $audioelement->text()->kirbytext()?>
+                    <?php if ($audioelement->text()->isNotEmpty()): ?>
+                        <?= $audioelement->text()->kirbytext()?>
+                    <?php endif ?>
                 </div>
                 <svg class="close-btn" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 2L2 10M10 10L2 2" stroke-linecap="square" stroke-linejoin="round"/>

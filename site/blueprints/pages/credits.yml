@@ -1,4 +1,14 @@
 title: Credits
+options:
+  delete:
+    admin: true
+    editor: false
+  changeSlug:
+    admin: true
+    editor: false
+  duplicate:
+    admin: true
+    editor: false
 
 columns: 
   - width: 1/2

@@ -61,7 +61,7 @@ permissions:
     create: false
     delete: false
   pages:
-    changeSlug: false
+    changeSlug: true
     changeStatus: true
     changeTemplate: true
     changeTitle: true
