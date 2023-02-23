@@ -3,7 +3,11 @@ title: Listenings
 sections:
   categories:
     type: pages
-    label: STORIE / OGGETTI
+    label: STORIE ~ OGGETTI
+    layout: cards
+    width: 1/2
     status: published
     sortable: false
     template: category
+    image:
+      back: "#82B4FF"

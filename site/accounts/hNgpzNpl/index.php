@@ -2,7 +2,7 @@
 
 return [
     'email' => 'giuliapolenta@gmail.com',
-    'language' => 'en',
+    'language' => 'it',
     'name' => '',
     'role' => 'admin'
 ];
