@@ -1,5 +1,9 @@
 title: Image
 
+accept:
+    extension: jpg, png, jpeg
+    orientation: landscape
+
 fields:
   alt:
     type: text

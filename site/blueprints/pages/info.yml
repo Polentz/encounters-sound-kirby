@@ -15,27 +15,69 @@ columns:
           infotitle:
             label: Titolo
             type: text
-      question:
-        type: fields
-        fields:
-          hasimage:
-            type: toggle
-            label: Vuoi inserire un'immagine nella colonna di destra?
-            text:
-              - "no"
-              - "sì"
   left:
     width: 1/2
     sections:
+      questionleft:
+        type: fields
+        fields:
+          hasimageleft:
+            type: toggle
+            label: Vuoi inserire un'immagine nella colonna di sinistra?
+            text:
+              - "no"
+              - "sì"
       leftcolumn:
         type: fields
         fields:
           columnone:
             label: Testo (colonna di sinistra)
             type: textarea
+            when:
+              hasimageleft: false
+      creditsleft:
+        type: fields
+        fields:
+          creditsone:
+            label: Testo aggiuntivo in font Mono
+            type: textarea
+            when:
+              hasimageleft: false
+          infoleft: 
+            label: false
+            type: info
+            text: 'Utile per: link, crediti, commenti, testi brevi, ecc.'
+            when:
+              hasimageleft: false
+      imageleft:
+        type: fields
+        fields:
+          imageleft:
+            label: Carica un'immagine
+            type: files
+            uploads: image
+            max: 1
+            multiple: false
+            layout: cards
+            size: medium
+            image:
+              cover: true
+              ratio: 4/3
+              back: "#82B4FF"
+            when:
+              hasimageleft: true 
   right:
     width: 1/2
     sections:
+      questionright:
+        type: fields
+        fields:
+          hasimageright:
+            type: toggle
+            label: Vuoi inserire un'immagine nella colonna di destra?
+            text:
+              - "no"
+              - "sì"
       rightcolumn:
         type: fields
         fields:
@@ -43,24 +85,37 @@ columns:
             label: Testo (colonna di destra)
             type: textarea
             when:
-              hasimage: false
-      image:
-        type: files
-        max: 1
-        multiple: false
-        template: image    
-        when:
-          hasimage: true    
-  footer:
-    width: 1/2
-    sections:
-      credits:
+              hasimageright: false
+      creditsright:
         type: fields
         fields:
-          credits:
+          creditstwo:
             label: Testo aggiuntivo in font Mono
             type: textarea
-          info: 
+            when:
+              hasimageright: false
+          inforight: 
             label: false
             type: info
             text: 'Utile per: link, crediti, commenti, testi brevi, ecc.'
+            when:
+              hasimageright: false
+      imageright:
+        type: fields
+        fields:
+          imageright:
+            label: Carica un'immagine
+            type: files
+            uploads: image
+            max: 1
+            multiple: false  
+            layout: cards
+            size: medium
+            image:
+              cover: true
+              ratio: 4/3
+              back: "#82B4FF"
+            when:
+              hasimageright: true 
+
+
