@@ -184,7 +184,7 @@ a:hover::before {
     background-color: var(--txt-color);
 }
 
-.draw-line {
+/* .draw-line {
     position: fixed;
     top: 0;
     left: 0;
@@ -202,7 +202,7 @@ a:hover::before {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-}
+} */
 
 .marquee-container {
     width: 100%;
@@ -216,9 +216,9 @@ a:hover::before {
 }
 
 .marquee-container svg {
+    height: 100%;
     display: block;
     margin: 0 auto;
-    height: 100%;
     stroke: var(--txt-color);
     stroke-width: .5px;
     stroke-miterlimit: 10;
@@ -268,7 +268,7 @@ main {
 
 .main {
     width: 100%;
-    height: var(--main-height);
+    height: calc(var(--main-height) + 3rem);
     position: sticky;
     top: var(--header-height);
     display: -webkit-box;
