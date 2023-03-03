@@ -14,7 +14,7 @@ if (anchorTags) {
             behavior: "smooth"
         });
     });
-}
+};
 
 const mainLink = document.querySelector(".main-link");
 const langLink = document.querySelector(".header-link");
@@ -35,7 +35,7 @@ if (langLinkHtml == "Ita") {
     langLink.addEventListener("mouseleave", () => {
         langLink.innerHTML = "Eng";
     });
-}
+};
 
 if (mainLink) {
     const mainLinkHtml = mainLink.innerHTML;
@@ -53,7 +53,7 @@ if (mainLink) {
         mainLink.addEventListener("mouseleave", () => {
             mainLink.innerHTML = "Entra";
         });
-    }
+    };
     // const handleMediaQuery = (e) => {
     //     if (e.matches) {
     //         mainLink.innerHTML = "Listen";
@@ -64,16 +64,31 @@ if (mainLink) {
 
     // mediaQuery.addListener(handleMediaQuery);
     // handleMediaQuery(mediaQuery);
-}
+};
 
-const path = document.querySelector(".line-path");
-if (path) {
-    const pathLength = path.getTotalLength();
-    path.style.strokeDasharray = pathLength + ' ' + pathLength;
-    path.style.strokeDashoffset = pathLength;
-    window.addEventListener("scroll", (e) => {
-        const scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-        const drawLength = pathLength * scrollPercentage;
-        path.style.strokeDashoffset = pathLength - drawLength;
+// const path = document.querySelector(".line-path");
+// if (path) {
+//     const pathLength = path.getTotalLength();
+//     path.style.strokeDasharray = pathLength + ' ' + pathLength;
+//     path.style.strokeDashoffset = pathLength;
+//     window.addEventListener("scroll", (e) => {
+//         const scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+//         const drawLength = pathLength * scrollPercentage;
+//         path.style.strokeDashoffset = pathLength - drawLength;
+//     });
+// };
+
+const paths = document.querySelectorAll(".marquee");
+if (paths) {
+    window.addEventListener("scroll", () => {
+        paths.forEach(path => {
+            path.style.animationPlayState = "paused";
+        });
+        if (window.scrollY == 0) {
+            paths.forEach(path => {
+                path.style.animationPlayState = "running";
+            });
+        };
     });
-}
+
+};

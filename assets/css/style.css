@@ -204,16 +204,47 @@ a:hover::before {
     justify-content: center;
 }
 
-.draw-line svg {
-    height: 104%;
+.marquee-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 7;
+    overflow: hidden;
+}
+
+.marquee-container svg {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
     stroke: var(--txt-color);
     stroke-width: .5px;
     stroke-miterlimit: 10;
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+    fill: none;
     -webkit-filter: drop-shadow(1px 1px 2px var(--blue));
     filter: drop-shadow(1px 1px 2px var(--blue));
+}
+
+.marquee {
+    position: relative;
+    top: 0;
+    animation: marquee 5s linear infinite both;
+}
+
+.marquee:last-of-type {
+    left: -2px;
+}
+
+@keyframes marquee {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -100%;
+    }
 }
 
 .site-title {
@@ -301,7 +332,6 @@ main {
 .header-link,
 .footer-link,
 .main-link {
-    /* font-family: "ABCDiatype Bold"; */
     /* font-family: Helvetica, sans-serif;
     font-weight: bold; */
     font-family: "ABCDiatype Mono";
