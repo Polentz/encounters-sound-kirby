@@ -18,7 +18,6 @@ if (anchorTags) {
 
 const mainLink = document.querySelector(".main-link");
 const langLink = document.querySelector(".header-link");
-// const mediaQuery = window.matchMedia("(max-width: 600px)");
 const langLinkHtml = langLink.innerHTML;
 
 if (langLinkHtml == "Ita") {
@@ -54,16 +53,6 @@ if (mainLink) {
             mainLink.innerHTML = "Entra";
         });
     };
-    // const handleMediaQuery = (e) => {
-    //     if (e.matches) {
-    //         mainLink.innerHTML = "Listen";
-    //     } else {
-    //         mainLink.innerHTML = "Enter";
-    //     }
-    // };
-
-    // mediaQuery.addListener(handleMediaQuery);
-    // handleMediaQuery(mediaQuery);
 };
 
 // const path = document.querySelector(".line-path");
@@ -83,12 +72,9 @@ if (paths) {
     window.addEventListener("scroll", () => {
         paths.forEach(path => {
             path.style.animationPlayState = "paused";
-        });
-        if (window.scrollY == 0) {
-            paths.forEach(path => {
+            if (window.scrollY == 0) {
                 path.style.animationPlayState = "running";
-            });
-        };
+            };
+        });
     });
-
 };
