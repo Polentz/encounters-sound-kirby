@@ -64,7 +64,6 @@ em {
 
 a {
     font-family: "ABCDiatype Mono";
-    /* display: block; */
     cursor: pointer;
     position: relative;
     -webkit-transition: -webkit-transform 1s ease-out;
@@ -146,7 +145,7 @@ a:hover::before {
     align-items: flex-start;
     padding-top: var(--small-margin);
     padding-bottom: var(--small-margin);
-    z-index: 6;
+    z-index: 7;
 }
 
 .footer p:first-of-type {
@@ -183,26 +182,6 @@ a:hover::before {
     background-color: var(--txt-color);
 }
 
-/* .draw-line {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 7;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-} */
-
 .marquee-container {
     width: 100%;
     height: 100%;
@@ -229,7 +208,7 @@ a:hover::before {
 .marquee {
     position: relative;
     top: 0;
-    animation: marquee 5s linear infinite both;
+    animation: marquee 8s linear infinite both;
 }
 
 .marquee:last-of-type {
@@ -400,7 +379,7 @@ main {
 }
 
 .info-column p:not(:last-child) {
-    margin-bottom: calc(var(--small-margin)*2);
+    margin-bottom: var(--small-margin);
 }
 
 .info-caption {
@@ -410,12 +389,13 @@ main {
 
 .info-column img {
     width: 100%;
+    margin-bottom: var(--small-margin);
 }
 
 .info {
     width: 100%;
     position: relative;
-    z-index: 5;
+    z-index: 6;
 }
 
 .logo-wrapper {
@@ -610,7 +590,6 @@ main {
     padding: .4rem 1.5rem .5rem 1.5rem;
     position: relative;
     z-index: 2;
-    /* mix-blend-mode: difference; */
     pointer-events: none;
 }
 
@@ -1076,7 +1055,7 @@ input.seek-slider::-webkit-slider-thumb {
     }
 
     .header {
-        z-index: 2;
+        z-index: 4;
     }
 
     .header::after {
@@ -1093,10 +1072,6 @@ input.seek-slider::-webkit-slider-thumb {
         margin-bottom: var(--header-height);
     }
 
-    .info {
-        z-index: 1;
-    }
-
     .info-wrapper {
         position: relative;
         height: auto;
@@ -1109,6 +1084,7 @@ input.seek-slider::-webkit-slider-thumb {
 
     .info-wrapper:last-of-type {
         margin-bottom: var(--footer-height);
+        min-height: auto;
     }
 
     .info-wrapper:not(:first-of-type)::after {
@@ -1129,7 +1105,7 @@ input.seek-slider::-webkit-slider-thumb {
 
     .info-caption,
     .info-column p:last-child {
-        margin-bottom: calc(var(--small-margin)*2);
+        margin-bottom: var(--small-margin);
     }
 
     .audio-wrapper {
