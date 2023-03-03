@@ -8,7 +8,9 @@
                 <?php endif ?>
             <?php else : ?>
                 <?= $info->columnone()->kt() ?>
-                <p class="info-caption"><?= $info->creditsone()->kt()->inline() ?></p>
+                <?php if ($info->creditsone()->isNotEmpty()) : ?>
+                    <p class="info-caption"><?= $info->creditsone()->kt()->inline() ?></p>
+                <?php endif ?>
             <?php endif ?>
         </div>
         <div class="info-column">
@@ -18,7 +20,9 @@
                 <?php endif ?>
             <?php else : ?>
                 <?= $info->columntwo()->kt() ?>
-                <p class="info-caption"><?= $info->creditstwo()->kt()->inline() ?></p>
+                <?php if ($info->creditstwo()->isNotEmpty()) : ?>
+                    <p class="info-caption"><?= $info->creditstwo()->kt()->inline() ?></p>
+                <?php endif ?>
             <?php endif ?>
         </div>
     </div>
