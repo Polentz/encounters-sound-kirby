@@ -48,13 +48,17 @@
             <div class="filters-wrapper">   
                 <p class="filters-title"><?= $storiesSubject ?></p>
                 <?php foreach ($storiesSubjects as $subject): ?>
-                    <button class="btn-component filter-button" data-filter="<?= $subject->slug() ?>"><?= $subject ?></button>
+                    <?php if ($subject->isNotEmpty()) : ?>
+                        <button class="btn-component filter-button" data-filter="<?= $subject->slug() ?>"><?= $subject ?></button>
+                    <?php endif ?>
                 <?php endforeach ?>
             </div>
             <div class="filters-wrapper">
                 <p class="filters-title"><?= $storiesTopic ?></p>
                 <?php foreach ($storiesFilters as $filter): ?>
-                    <button class="btn-component filter-button" data-filter="<?= $filter->slug() ?>"><?= $filter ?></button>
+                    <?php if ($filter->isNotEmpty()) : ?>
+                        <button class="btn-component filter-button" data-filter="<?= $filter->slug() ?>"><?= $filter ?></button>
+                    <?php endif ?>
                 <?php endforeach ?>
             </div>
             <div class="filters-wrapper">
@@ -72,7 +76,9 @@
     <div class="filters-container">
         <div class="filters-wrapper">
             <?php foreach ($objectsFilters as $filter): ?>
-                <button class="btn-component filter-button" data-filter="<?= $filter->slug() ?>"><?= $filter ?></button>
+                <?php if ($filter->isNotEmpty()) : ?>
+                    <button class="btn-component filter-button" data-filter="<?= $filter->slug() ?>"><?= $filter ?></button>
+                <?php endif ?>
             <?php endforeach ?>
         </div>
         <div class="filters-wrapper">
