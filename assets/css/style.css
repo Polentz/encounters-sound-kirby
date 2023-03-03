@@ -208,11 +208,22 @@ a:hover::before {
 .marquee {
     position: relative;
     top: 0;
+    -webkit-animation: marquee 8s linear infinite both;
     animation: marquee 8s linear infinite both;
 }
 
 .marquee:last-of-type {
     left: -2px;
+}
+
+@-webkit-keyframes marquee {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -100%;
+    }
 }
 
 @keyframes marquee {
@@ -469,7 +480,7 @@ main {
 }
 
 .audio-component {
-    padding: var(--general-margin) 0;
+    padding: calc(var(--general-margin)/2) 0;
     -webkit-transition: -webkit-box-shadow .5s ease;
     transition: -webkit-box-shadow .5s ease;
     -o-transition: box-shadow .5s ease;
