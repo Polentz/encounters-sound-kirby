@@ -43,7 +43,7 @@ if (mainLink) {
     if (mainLinkHtml == "Enter") {
         mainLink.addEventListener("mouseenter", () => {
             mainLink.innerHTML = "Listen";
-            pathContainer.style.opacity = "0";
+            pathContainer.style.opacity = ".25";
         });
         mainLink.addEventListener("mouseleave", () => {
             mainLink.innerHTML = "Enter";
@@ -52,7 +52,7 @@ if (mainLink) {
     } else if (mainLinkHtml == "Entra") {
         mainLink.addEventListener("mouseenter", () => {
             mainLink.innerHTML = "Ascolta";
-            pathContainer.style.opacity = "0";
+            pathContainer.style.opacity = ".25";
         });
         mainLink.addEventListener("mouseleave", () => {
             mainLink.innerHTML = "Entra";
@@ -64,7 +64,7 @@ if (mainLink) {
 if (paths) {
     window.addEventListener("scroll", () => {
         paths.forEach(path => {
-            pathContainer.style.opacity = "0";
+            pathContainer.style.opacity = ".25";
             if (window.scrollY == 0) {
                 pathContainer.style.opacity = "1";
             };
