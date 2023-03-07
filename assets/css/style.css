@@ -487,6 +487,7 @@ a:hover::before {
     margin-bottom: var(--small-margin);
 }
 
+.info-column a,
 .info-caption {
     font-family: "ABCDiatype Mono";
     font-size: var(--mono-txt);

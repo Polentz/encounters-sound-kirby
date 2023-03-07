@@ -25,7 +25,7 @@
                 <div class="logo-wrapper">
                     <div class="overlay"></div>
                     <?php foreach($page->images()->sortBy('sort') as $image): ?>
-                        <img src="<?= $image->url() ?>" height="<?= $image->customheight() ?>px">
+                        <img src="<?= $image->resize(800, null, 72)->url() ?>" height="<?= $image->customheight() ?>px">
                     <?php endforeach ?>
                 </div>
             </div>
