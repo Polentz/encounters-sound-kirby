@@ -19,6 +19,8 @@ if (anchorTags) {
 const mainLink = document.querySelector(".main-link");
 const langLink = document.querySelector(".header-link");
 const langLinkHtml = langLink.innerHTML;
+const paths = document.querySelectorAll(".marquee");
+const pathContainer = document.querySelector(".marquee-container");
 
 if (langLinkHtml == "Ita") {
     langLink.addEventListener("mouseenter", () => {
@@ -41,27 +43,32 @@ if (mainLink) {
     if (mainLinkHtml == "Enter") {
         mainLink.addEventListener("mouseenter", () => {
             mainLink.innerHTML = "Listen";
+            pathContainer.style.opacity = "0";
         });
         mainLink.addEventListener("mouseleave", () => {
             mainLink.innerHTML = "Enter";
+            pathContainer.style.opacity = "1";
         });
     } else if (mainLinkHtml == "Entra") {
         mainLink.addEventListener("mouseenter", () => {
             mainLink.innerHTML = "Ascolta";
+            pathContainer.style.opacity = "0";
         });
         mainLink.addEventListener("mouseleave", () => {
             mainLink.innerHTML = "Entra";
+            pathContainer.style.opacity = "1";
         });
     };
 };
 
-const paths = document.querySelectorAll(".marquee");
 if (paths) {
     window.addEventListener("scroll", () => {
         paths.forEach(path => {
-            path.style.animationPlayState = "paused";
+            pathContainer.style.opacity = "0";
+            // path.style.animationPlayState = "paused";
             if (window.scrollY == 0) {
-                path.style.animationPlayState = "running";
+                // path.style.animationPlayState = "running";
+                pathContainer.style.opacity = "1";
             };
         });
     });

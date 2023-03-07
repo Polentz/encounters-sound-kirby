@@ -45,8 +45,8 @@
     <?= css ([
         'assets/css/base.css',
         'assets/css/style.css',
-        '@auto',
     ]) ?>
+    <?= css("@auto") ?>
 </head>
 
 
