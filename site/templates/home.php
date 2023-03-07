@@ -53,7 +53,7 @@
 
     <footer class="footer">
         <a class="footer-link" href="<?= page('credits')->url() ?>"><?= page('credits')->title() ?></a>
-        <a class="footer-link" href="mailto:info@soundobjectsofmigrations.it">Contact</a>
+        <a class="footer-link" href="mailto:info@soundobjectsofmigrations.it">Email</a>
     </footer>
 
 <?= snippet('footer') ?>
