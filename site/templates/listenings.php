@@ -19,6 +19,7 @@
         $storiesSubject = 'Filter by subject';
         $clearFilters = 'Clear Filters';
     }
+    $listenings = page('listenings')->children()->listed();
 ?>
 
 <?= snippet('header') ?>
@@ -26,6 +27,8 @@
 <header class="header">
         <h1 class="site-title"><a href="<?= $site->url() ?>"><?= $site->title() ?></a></h1>
         <a class="header-link" href="<?= $page->url($href) ?>"><?= $languageString ?></a>
+        <h2 class="main-title"><?= $listenings->first()->title() ?></h2>
+        <h2 class="main-title"><?= $listenings->last()->title() ?></h2>
 </header>
 
 <main class="audio">

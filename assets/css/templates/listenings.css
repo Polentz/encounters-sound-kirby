@@ -1,0 +1,21 @@
+.main-title {
+    font-family: "ABCDiatype Medium";
+    font-size: var(--header-title);
+    text-transform: uppercase;
+    padding: 2px;
+    bottom: var(--small-margin);
+    transform: none;
+    z-index: -1;
+}
+
+.main-title:first-of-type {
+    left: 0;
+    text-align: center;
+    padding-right: 0;
+}
+
+.main-title:last-of-type {
+    right: 0;
+    text-align: center;
+    padding-left: 0;
+}

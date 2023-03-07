@@ -227,14 +227,14 @@ a:hover::before {
     position: fixed;
     top: 50%;
     left: 0;
-    transform: translateY(calc(-50% - var(--header-height)));
+    transform: translateY(-50%);
     pointer-events: none;
     overflow: hidden;
     z-index: -1;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: opacity 1s ease;
+    transition: opacity 2s ease;
     animation: fade 1s linear;
 }
 
@@ -285,7 +285,7 @@ a:hover::before {
     width: 100%;
     height: calc(var(--doc-height) - var(--header-height)*2 + 1px);
     position: sticky;
-    top: 0;
+    top: var(--header-height);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
