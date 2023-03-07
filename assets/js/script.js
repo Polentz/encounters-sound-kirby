@@ -65,9 +65,7 @@ if (paths) {
     window.addEventListener("scroll", () => {
         paths.forEach(path => {
             pathContainer.style.opacity = "0";
-            // path.style.animationPlayState = "paused";
             if (window.scrollY == 0) {
-                // path.style.animationPlayState = "running";
                 pathContainer.style.opacity = "1";
             };
         });

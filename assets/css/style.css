@@ -16,6 +16,16 @@
         url("../font/abcdiatypemono-medium.woff") format("woff");
 }
 
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes fade {
     from {
         opacity: 0;
@@ -26,32 +36,74 @@
     }
 }
 
-@keyframes marquee1 {
+@-webkit-keyframes marquee1 {
     from {
+        -webkit-transform: translateX(100%);
         transform: translateX(100%);
     }
 
     to {
+        -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee1 {
+    from {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes marquee2 {
+    from {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+    to {
+        -webkit-transform: translateX(-200%);
+        transform: translateX(-200%);
     }
 }
 
 @keyframes marquee2 {
     from {
+        -webkit-transform: translateX(0%);
         transform: translateX(0%);
     }
 
     to {
+        -webkit-transform: translateX(-200%);
         transform: translateX(-200%);
+    }
+}
+
+@-webkit-keyframes marquee3 {
+    from {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    to {
+        -webkit-transform: translateX(-300%);
+        transform: translateX(-300%);
     }
 }
 
 @keyframes marquee3 {
     from {
+        -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
     }
 
     to {
+        -webkit-transform: translateX(-300%);
         transform: translateX(-300%);
     }
 }
@@ -227,14 +279,24 @@ a:hover::before {
     position: fixed;
     top: 50%;
     left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     pointer-events: none;
     overflow: hidden;
     z-index: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-transition: opacity 2s ease;
+    -o-transition: opacity 2s ease;
     transition: opacity 2s ease;
+    -webkit-animation: fade 1s linear;
     animation: fade 1s linear;
 }
 
@@ -253,16 +315,21 @@ a:hover::before {
 }
 
 .marquee:nth-child(1) {
+    -webkit-animation: marquee1 1s linear infinite;
     animation: marquee1 1s linear infinite;
 }
 
 .marquee:nth-child(2) {
+    -webkit-animation: marquee2 1s linear infinite;
     animation: marquee2 1s linear infinite;
+    -webkit-animation-delay: .5s;
     animation-delay: .5s;
 }
 
 .marquee:nth-child(3) {
+    -webkit-animation: marquee3 1s linear infinite;
     animation: marquee3 1s linear infinite;
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 

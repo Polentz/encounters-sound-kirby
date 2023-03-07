@@ -4,6 +4,8 @@
     text-transform: uppercase;
     padding: 2px;
     bottom: var(--small-margin);
+    -webkit-transform: none;
+    -ms-transform: none;
     transform: none;
     z-index: -1;
 }
