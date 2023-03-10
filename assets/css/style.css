@@ -296,8 +296,8 @@ a:hover::before {
     -webkit-transition: opacity 2s ease;
     -o-transition: opacity 2s ease;
     transition: opacity 2s ease;
-    -webkit-animation: fade 1s linear;
-    animation: fade 1s linear;
+    -webkit-animation: fade 5s ease-in 1;
+    animation: fade 5s ease-in 1;
 }
 
 .marquee {
@@ -315,26 +315,25 @@ a:hover::before {
 }
 
 .marquee:nth-child(1) {
-    -webkit-animation: marquee1 1s linear infinite;
-    animation: marquee1 1s linear infinite;
+    -webkit-animation: marquee1 3s linear infinite;
+    animation: marquee1 3s linear infinite;
 }
 
 .marquee:nth-child(2) {
-    -webkit-animation: marquee2 1s linear infinite;
-    animation: marquee2 1s linear infinite;
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s;
+    -webkit-animation: marquee2 3s linear infinite;
+    animation: marquee2 3s linear infinite;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
 }
 
 .marquee:nth-child(3) {
-    -webkit-animation: marquee3 1s linear infinite;
-    animation: marquee3 1s linear infinite;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation: marquee3 3s linear infinite;
+    animation: marquee3 3s linear infinite;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .site-title {
-    /* font-family: "ABCDiatype Bold"; */
     /* font-family: Helvetica, sans-serif;
     font-weight: bold; */
     font-size: var(--header-title);
@@ -922,138 +921,96 @@ input.seek-slider::-webkit-slider-thumb {
 
 .filters.show button {
     opacity: 1;
+    -webkit-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
 }
 
 .filters.show button:nth-of-type(1) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-    -webkit-transition-delay: .08s;
-    -o-transition-delay: .08s;
-    transition-delay: .08s;
+    -webkit-transition-delay: .8s;
+    -o-transition-delay: .8s;
+    transition-delay: .8s;
 }
 
 .filters.show button:nth-of-type(2) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .16s;
     -o-transition-delay: .16s;
     transition-delay: .16s;
 }
 
 .filters.show button:nth-of-type(3) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .24s;
     -o-transition-delay: .24s;
     transition-delay: .24s;
 }
 
 .filters.show button:nth-of-type(4) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .32s;
     -o-transition-delay: .32s;
     transition-delay: .32s;
 }
 
 .filters.show button:nth-of-type(5) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .40s;
     -o-transition-delay: .40s;
     transition-delay: .40s;
 }
 
 .filters.show button:nth-of-type(6) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .48s;
     -o-transition-delay: .48s;
     transition-delay: .48s;
 }
 
 .filters.show button:nth-of-type(7) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .56s;
     -o-transition-delay: .56s;
     transition-delay: .56s;
 }
 
 .filters.show button:nth-of-type(8) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .64s;
     -o-transition-delay: .64s;
     transition-delay: .64s;
 }
 
 .filters.show button:nth-of-type(9) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .72s;
     -o-transition-delay: .72s;
     transition-delay: .72s;
 }
 
 .filters.show button:nth-of-type(10) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .8s;
     -o-transition-delay: .8s;
     transition-delay: .8s;
 }
 
 .filters.show button:nth-of-type(11) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .64s;
     -o-transition-delay: .64s;
     transition-delay: .64s;
 }
 
 .filters.show button:nth-of-type(12) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .72s;
     -o-transition-delay: .72s;
     transition-delay: .72s;
 }
 
 .filters.show button:nth-of-type(13) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .8s;
     -o-transition-delay: .8s;
     transition-delay: .8s;
 }
 
 .filters.show button:nth-of-type(14) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .72s;
     -o-transition-delay: .72s;
     transition-delay: .72s;
 }
 
 .filters.show button:nth-of-type(15) {
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
     -webkit-transition-delay: .8s;
     -o-transition-delay: .8s;
     transition-delay: .8s;
