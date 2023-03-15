@@ -60,14 +60,3 @@ if (mainLink) {
         });
     };
 };
-
-if (paths) {
-    window.addEventListener("scroll", () => {
-        paths.forEach(path => {
-            pathContainer.style.opacity = ".25";
-            if (window.scrollY == 0) {
-                pathContainer.style.opacity = "1";
-            };
-        });
-    });
-};
