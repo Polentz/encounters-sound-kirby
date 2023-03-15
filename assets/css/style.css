@@ -1227,6 +1227,9 @@ input.seek-slider::-webkit-slider-thumb {
     }
 
     .audio-header {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1246,6 +1249,8 @@ input.seek-slider::-webkit-slider-thumb {
     }
 
     .audio-time {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
