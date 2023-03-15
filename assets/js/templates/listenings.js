@@ -210,11 +210,6 @@ audioComponent.forEach(component => {
                 });
             }
 
-            // audio.addEventListener("playing", () => {
-            //     displayDuration();
-            //     setSliderMax();
-            // });
-
             seekSlider.addEventListener("input", () => {
                 currentTimeContainer.textContent = calculateTime(seekSlider.value);
                 if (!audio.paused) {

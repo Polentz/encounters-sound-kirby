@@ -84,31 +84,6 @@
     }
 }
 
-@-webkit-keyframes marquee3 {
-    from {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
-
-    to {
-        -webkit-transform: translateX(-300%);
-        transform: translateX(-300%);
-    }
-}
-
-@keyframes marquee3 {
-    from {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-    }
-
-    to {
-        -webkit-transform: translateX(-300%);
-        transform: translateX(-300%);
-    }
-}
-
-
 :root {
     --doc-height: 100%;
     --random-top: 0;
@@ -140,7 +115,6 @@ html {
 
 body {
     font-family: "ABCDiatype Medium";
-    /* font-family: Helvetica, sans-serif; */
     color: var(--txt-color);
     background-color: var(--bg-color);
     overflow-x: hidden;
@@ -315,27 +289,18 @@ a:hover::before {
 }
 
 .marquee:nth-child(1) {
-    -webkit-animation: marquee1 3s linear infinite;
-    animation: marquee1 3s linear infinite;
+    -webkit-animation: marquee1 2.5s linear infinite;
+    animation: marquee1 2.5s linear infinite;
 }
 
 .marquee:nth-child(2) {
-    -webkit-animation: marquee2 3s linear infinite;
-    animation: marquee2 3s linear infinite;
-    -webkit-animation-delay: 1.5s;
-    animation-delay: 1.5s;
-}
-
-.marquee:nth-child(3) {
-    -webkit-animation: marquee3 3s linear infinite;
-    animation: marquee3 3s linear infinite;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
+    -webkit-animation: marquee2 2.5s linear infinite;
+    animation: marquee2 2.5s linear infinite;
+    -webkit-animation-delay: 1.25s;
+    animation-delay: 1.25s;
 }
 
 .site-title {
-    /* font-family: Helvetica, sans-serif;
-    font-weight: bold; */
     font-size: var(--header-title);
     text-transform: uppercase;
     white-space: nowrap;
@@ -386,7 +351,6 @@ a:hover::before {
 
 .main-title {
     font-family: "ABCDiatype Medium";
-    /* font-family: Helvetica, sans-serif; */
     font-size: var(--large-txt);
     line-height: 1.1;
     text-transform: uppercase;
@@ -413,8 +377,6 @@ a:hover::before {
 .header-link,
 .footer-link,
 .main-link {
-    /* font-family: Helvetica, sans-serif;
-    font-weight: bold; */
     font-family: "ABCDiatype Mono";
     font-size: var(--header-title);
     text-transform: uppercase;
@@ -459,8 +421,6 @@ a:hover::before {
 
 .info-title {
     font-family: "ABCDiatype Bold";
-    /* font-family: Helvetica, sans-serif;
-    font-weight: bold; */
     font-size: var(--medium-txt);
     text-align: center;
     padding: var(--small-margin);
@@ -627,8 +587,6 @@ a:hover::before {
 
 .audio-title {
     font-family: "ABCDiatype Bold";
-    /* font-family: Helvetica, sans-serif;
-    font-weight: bold; */
     font-size: var(--medium-txt);
     text-align: center;
 }
@@ -927,9 +885,9 @@ input.seek-slider::-webkit-slider-thumb {
 }
 
 .filters.show button:nth-of-type(1) {
-    -webkit-transition-delay: .8s;
-    -o-transition-delay: .8s;
-    transition-delay: .8s;
+    -webkit-transition-delay: .08s;
+    -o-transition-delay: .08s;
+    transition-delay: .08s;
 }
 
 .filters.show button:nth-of-type(2) {
@@ -987,33 +945,33 @@ input.seek-slider::-webkit-slider-thumb {
 }
 
 .filters.show button:nth-of-type(11) {
-    -webkit-transition-delay: .64s;
-    -o-transition-delay: .64s;
-    transition-delay: .64s;
+    -webkit-transition-delay: .88s;
+    -o-transition-delay: .88s;
+    transition-delay: .88s;
 }
 
 .filters.show button:nth-of-type(12) {
-    -webkit-transition-delay: .72s;
-    -o-transition-delay: .72s;
-    transition-delay: .72s;
+    -webkit-transition-delay: .96s;
+    -o-transition-delay: .96s;
+    transition-delay: .96s;
 }
 
 .filters.show button:nth-of-type(13) {
-    -webkit-transition-delay: .8s;
-    -o-transition-delay: .8s;
-    transition-delay: .8s;
+    -webkit-transition-delay: 1.04s;
+    -o-transition-delay: 1.04s;
+    transition-delay: 1.04s;
 }
 
 .filters.show button:nth-of-type(14) {
-    -webkit-transition-delay: .72s;
-    -o-transition-delay: .72s;
-    transition-delay: .72s;
+    -webkit-transition-delay: 1.12s;
+    -o-transition-delay: 1.12s;
+    transition-delay: 1.12s;
 }
 
 .filters.show button:nth-of-type(15) {
-    -webkit-transition-delay: .8s;
-    -o-transition-delay: .8s;
-    transition-delay: .8s;
+    -webkit-transition-delay: 1.20s;
+    -o-transition-delay: 1.20s;
+    transition-delay: 1.20s;
 }
 
 .filters-container {
@@ -1102,7 +1060,7 @@ input.seek-slider::-webkit-slider-thumb {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
     :root {
         --header-height: 3rem;
         --footer-height: 3rem;
@@ -1159,6 +1117,7 @@ input.seek-slider::-webkit-slider-thumb {
         -ms-flex-direction: column;
         flex-direction: column;
         padding: var(--general-margin);
+        row-gap: var(--general-margin);
     }
 
     .info-column {
@@ -1217,7 +1176,6 @@ input.seek-slider::-webkit-slider-thumb {
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: flex-start;
-        margin: 0;
     }
 
     .audio-info-card {
@@ -1254,5 +1212,50 @@ input.seek-slider::-webkit-slider-thumb {
     .filter-button:hover {
         background-color: var(--bg-color);
         color: var(--txt-color);
+    }
+}
+
+@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .main {
+        height: var(--doc-height);
+        top: 0;
+    }
+
+    .main-wrapper {
+        row-gap: 0;
+    }
+
+    .audio-header {
+        flex-direction: row;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        gap: .5rem;
+        padding: var(--small-margin);
+    }
+
+    .audio-title {
+        text-align: center;
+    }
+
+    .audio-tag-wrapper {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .audio-time {
+        display: flex;
+    }
+
+    .audio-info {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .audio-info-card {
+        width: calc(50% - 1rem);
     }
 }
